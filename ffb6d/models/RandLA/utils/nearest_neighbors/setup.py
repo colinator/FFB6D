@@ -3,15 +3,6 @@ from distutils.extension import Extension
 from Cython.Distutils import build_ext
 import numpy
 
-#def buildit():
-#    from Cython.Distutils import build_ext
-#    return build_ext
-
-#def numpy_includes():
-#    import numpy as np
-#    return np.get_include()
-
-
 ext_module = Extension(
     "nearest_neighbors",
     sources=["knn.pyx", "knn_.cxx",],  # source file(s)
@@ -25,8 +16,4 @@ setup(
     name = "KNNNanoFLANN",
     ext_modules = [ext_module],
     cmdclass = {'build_ext': build_ext},
-    install_requires=[
-        'Cython',
-        'numpy',
-    ],
 )
