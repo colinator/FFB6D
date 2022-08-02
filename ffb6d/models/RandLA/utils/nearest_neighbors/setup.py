@@ -15,7 +15,7 @@ ext_modules = [Extension(
   )]
 
 setup(
-    name = "KNN_NanoFLANN",
+    name = "KNNNanoFLANN",
     ext_modules = ext_modules,
     cmdclass = {'build_ext': build_ext},
     install_requires=[
