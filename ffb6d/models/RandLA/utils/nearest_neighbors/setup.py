@@ -20,7 +20,7 @@ ext_module = Extension(
 setup(
     name = "KNNNanoFLANN",
     ext_modules = [ext_module],
-    cmdclass = {'build_ext': build_ext},
+    cmdclass = {'build_ext': buildit},
     install_requires=[
         'cython',
         'numpy',
