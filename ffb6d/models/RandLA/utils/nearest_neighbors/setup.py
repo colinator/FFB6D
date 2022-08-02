@@ -15,7 +15,8 @@ ext_modules = [Extension(
   )]
 
 setup(
-    name = "KNN NanoFLANN",
+    name = "KNN_NanoFLANN",
     ext_modules = ext_modules,
     cmdclass = {'build_ext': build_ext},
+    install_requires=['Cython'],
 )
